@@ -1,0 +1,16 @@
+{
+  "name": "週番確認アプリ",
+  "short_name": "週番確認",
+  "description": "年度週番と開始日をすばやく確認",
+  "lang": "ja",
+  "id": "./",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f9fbfb",
+  "theme_color": "#123d4d",
+  "icons": [
+    { "src": "./icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "./icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" }
+  ]
+}

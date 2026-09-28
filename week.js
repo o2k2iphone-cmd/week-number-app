@@ -118,15 +118,12 @@ function buildTsv(startInput, endInput, maxWeeks = 520) {
   if (count > maxWeeks) {
     throw new RangeError(`一度に変換できるのは${maxWeeks}週までです。`);
   }
-  const ids = [];
   const dates = [];
   for (let index = 0; index < count; index += 1) {
     const date = new Date(start.startDate.getTime() + index * WEEK_MS);
-    const info = weekFromDate(date.getUTCFullYear(), date.getUTCMonth() + 1, date.getUTCDate());
-    ids.push(info.id);
     dates.push(formatTsvDate(date));
   }
-  return { text: `${ids.join("\t")}\n${dates.join("\t")}`, count };
+  return { text: dates.join("\t"), count };
 }
 
 // Classic scripts also run when index.html is opened directly from the folder.

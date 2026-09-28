@@ -1,4 +1,4 @@
-const CACHE_NAME = "shuban-kakunin-v2";
+const CACHE_NAME = "shuban-kakunin-v3";
 const APP_FILES = [
   "./",
   "./index.html",
